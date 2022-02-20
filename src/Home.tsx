@@ -1,34 +1,14 @@
 import React, { Fragment } from 'react';
-import styled from 'styled-components';
-
-const StyledButton = styled.button`
-    background-color: black;
-    font-size: 32px;
-    color: white;
-`;
-
-class CustomButton extends React.Component<any, any> {
-    constructor(props: any) {
-        super( props );
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    handleClick() {
-        window.alert( "hello world!" );
-    }
-
-    render() {
-        return (
-            <StyledButton onClick={ this.handleClick }>This Is A Button</StyledButton>
-        );
-    }
-}
+import Button from './Button';
 
 const Home = () => {
     return (
        <Fragment>
-            <div>
-                <CustomButton/>
+            <div className='Home'>
+                <Button
+                    text = { "YouTube" }
+                    handleClick = { () => window.open("https://www.youtube.com/c/WhiteFyr", "_blank") }
+                />
             </div>
         </Fragment>
     );
