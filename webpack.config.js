@@ -3,8 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    //entry: path.resolve(__dirname, 'src', 'index.tsx'),
-    entry: './src/index.tsx',
+    entry: path.resolve(__dirname, 'src', 'index.tsx'),
     output: {
         path: path.resolve(__dirname, 'src'),
         publicPath: 'http://localhost:8080/',
@@ -32,5 +31,8 @@ module.exports = {
     ],
     resolve: {
         extensions: ['.ts', '.tsx', '.js', '.jsx']
+    },
+    devServer: {
+        historyApiFallback: true
     }
 }

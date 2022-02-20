@@ -12,16 +12,6 @@ interface ButtonProps {
     handleClick: () => void
 }
 
-//type ButtonProps = {
-//    handleClick: () => void
-//}
-
-//const Button = (props: ButtonProps) => {
-//    return <StyledButton onClick={props.handleClick}>
-//                Click
-//            </StyledButton>
-//}
-
 class Button extends React.Component< ButtonProps > {
     render() {
         return (

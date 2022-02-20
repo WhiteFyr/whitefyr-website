@@ -1,13 +1,12 @@
 import React from 'react';
 import {
-    BrowserRouter as Router,
     Routes,
     Route
 } from 'react-router-dom';
 
 // Import pages for routing
-import Downloads from './Downloads';
-import Home from './Home';
+import Downloads from './pages/Downloads';
+import Home from './pages/Home';
 
 const App = () => {
     return (
