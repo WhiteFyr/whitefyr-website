@@ -19,6 +19,7 @@ const Navbar = styled.nav`
   font-family: ${Theme.fonts.heading};
   color: ${Theme.colors.light};
   display: flex;
+  margin: 0px;
   align-items: center;
   justify-content: space-between;
   a { color: white; text-decoration: none; }`;

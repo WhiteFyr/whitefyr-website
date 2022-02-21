@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
-import { Navbar, Container, NavDropdown, Nav } from 'react-bootstrap';
 import Button from '../components/Button';
 import StyledNavbar from '../components/Navbar';
+import { TwitchEmbed, TwitchEmbedLayout } from 'twitch-player';
 
 const navigation = {
     brand: { name: "StyledNavbar", to: "/" },
@@ -11,33 +11,26 @@ const navigation = {
       { name: "Downloads", to: "/downloads" },
       { name: "Contact Me", to: "/contact" },
     ]
-  }
+}
 
-const Home = () => {
-    return (
-       <Fragment>
-            <div>
-                <StyledNavbar brand={navigation.brand} links={navigation.links}/>           
-            </div>
-            <div className='Main'>
-                <Button
-                    text = { "YouTube" }
-                    handleClick = { () => window.open("https://www.youtube.com/c/WhiteFyr", "_blank") }
-                />
-                <Button
-                    text = { "Twitch" }
-                    handleClick = { () => window.open("https://www.twitch.tv/whitefyr", "_blank") }
-                />
-                <Button
-                    text = { "Twitter" }
-                    handleClick = { () => window.open("https://twitter.com/WhiteFyr_", "_blank") }
-                />
-                <Button
-                    text = { "Instagram" }
-                    handleClick = { () => window.open("https://www.instagram.com/whitefyr/", "_blank") }
-                />
-            </div>
-        </Fragment>
+// const embed = new TwitchEmbed('twitch-player', {
+//     width: 1280,
+//     height: 720,
+//     channel: 'whitefyr',
+//     layout: TwitchEmbedLayout.VIDEO_WITH_CHAT
+// });
+
+//<Button
+//    text = { "YouTube" }
+//    handleClick = { () => window.open("https://www.youtube.com/c/WhiteFyr", "_blank") }
+///>
+
+const Home = () => {   
+    return (         
+        <div className='Main'>
+            <StyledNavbar brand={navigation.brand} links={navigation.links}/>
+            <h1>Welcome to WhiteFyr's Website!</h1>
+        </div>
     );
 }
 
