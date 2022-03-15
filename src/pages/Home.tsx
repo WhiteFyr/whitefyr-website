@@ -1,10 +1,9 @@
 import React, { Fragment } from 'react';
-import Button from '../components/Button';
 import StyledNavbar from '../components/Navbar';
 import { TwitchEmbed, TwitchEmbedLayout } from 'twitch-player';
 
 const navigation = {
-    brand: { name: "StyledNavbar", to: "/" },
+    brand: { name: "WhiteFyr", to: "/" },
     links: [
       { name: "About Me", to: "/about" },
       { name: "Builds", to: "/builds" },

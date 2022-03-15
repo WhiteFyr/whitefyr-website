@@ -2,7 +2,7 @@ import React from 'react';
 import StyledNavbar from '../components/Navbar';
 
 const navigation = {
-    brand: { name: "StyledNavbar", to: "/" },
+    brand: { name: "WhiteFyr", to: "/" },
     links: [
       { name: "About Me", to: "/about" },
       { name: "Builds", to: "/builds" },
