@@ -27,9 +27,9 @@
     "react-query": "^3.34.15",
     "react-router": "^6.2.1",
     "react-router-dom": "^6.2.1",
+    "react-twitch-embed-video": "^3.0.2",
     "style-components": "^0.1.0",
-    "styled-components": "^5.3.3",
-    "twitch-player": "^2.0.2"
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@material-ui/core": "^4.12.3",

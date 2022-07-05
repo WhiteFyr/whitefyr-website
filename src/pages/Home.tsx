@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import StyledNavbar from '../components/Navbar';
-import { TwitchEmbed, TwitchEmbedLayout } from 'twitch-player';
+import TwitchStream from '../components/TwitchStream';
 
 const navigation = {
     nav: [
@@ -19,23 +19,12 @@ const navigation = {
     ]
 }
 
-// const embed = new TwitchEmbed('twitch-player', {
-//     width: 1280,
-//     height: 720,
-//     channel: 'whitefyr',
-//     layout: TwitchEmbedLayout.VIDEO_WITH_CHAT
-// });
-
-//<Button
-//    text = { "YouTube" }
-//    handleClick = { () => window.open("https://www.youtube.com/c/WhiteFyr", "_blank") }
-///>
-
 const Home = () => {   
     return (         
         <div className='Main'>
             <StyledNavbar nav={navigation.nav} social={navigation.social}/>
             <h1>Welcome to WhiteFyr's Website!</h1>
+            <TwitchStream></TwitchStream>
         </div>
     );
 }
