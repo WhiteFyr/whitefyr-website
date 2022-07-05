@@ -3,12 +3,19 @@ import StyledNavbar from '../components/Navbar';
 import styled from 'styled-components';
 
 const navigation = {
-    brand: { name: "WhiteFyr", to: "/" },
-    links: [
+    nav: [
+      { name: "Home", to: "/" },
       { name: "About Me", to: "/about" },
       { name: "Builds", to: "/builds" },
       { name: "Downloads", to: "/downloads" },
       { name: "Contact Me", to: "/contact" },
+    ],
+    social: [
+      { name: "YouTube", to: "/about" },
+      { name: "Twitch", to: "/builds" },
+      { name: "Twitter", to: "/downloads" },
+      { name: "Instagram", to: "https://www.instagram.com/whitefyr/" },
+      { name: "Discord", to: "/contact" },
     ]
 }
 
@@ -38,7 +45,7 @@ const Li = styled.li`
 const Downloads = () => {
     return (           
         <div className="Downloads">
-            <StyledNavbar brand={navigation.brand} links={navigation.links}/> 
+            <StyledNavbar nav={navigation.nav} social={navigation.social}/> 
             <h1>All World Downloads (2015-Present)</h1>
         
             <h2>Survival Heights:</h2>

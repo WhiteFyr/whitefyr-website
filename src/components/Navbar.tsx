@@ -54,16 +54,19 @@ const Li = styled.li`
   white-space: nowrap;`;
 
 const StyledNavbar = (props: {
-    brand: { name: string; to: string },
-    links: Array<{ name: string, to: string }>
+    nav: Array<{ name: string; to: string }>
+    social: Array<{ name: string, to: string }>
   }) => {
-    const { brand, links } = props;
-    const NavLinks: any = () => links.map((link: { name: string, to: string }) => <Li key={link.name}><a href={link.to}>{link.name}</a></Li>);
+    const { nav, social } = props;
+    const NavLinks: any = () => nav.map((link: { name: string, to: string }) => <Li key={link.name}><a href={link.to}>{link.name}</a></Li>);
+    const SocialLinks: any = () => social.map((link: { name: string, to: string }) => <Li key={link.name}><a href={link.to}>{link.name}</a></Li>);
     return (
       <Navbar>
-        <Brand href={brand.to}>{brand.name}</Brand>
         <Ul>
           <NavLinks />
+        </Ul>
+        <Ul>
+          <SocialLinks />
         </Ul>
       </Navbar >
     )

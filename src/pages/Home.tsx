@@ -3,12 +3,19 @@ import StyledNavbar from '../components/Navbar';
 import { TwitchEmbed, TwitchEmbedLayout } from 'twitch-player';
 
 const navigation = {
-    brand: { name: "WhiteFyr", to: "/" },
-    links: [
+    nav: [
+      { name: "Home", to: "/" },
       { name: "About Me", to: "/about" },
       { name: "Builds", to: "/builds" },
       { name: "Downloads", to: "/downloads" },
       { name: "Contact Me", to: "/contact" },
+    ],
+    social: [
+      { name: "YouTube", to: "/about" },
+      { name: "Twitch", to: "/builds" },
+      { name: "Twitter", to: "/downloads" },
+      { name: "Instagram", to: "https://www.instagram.com/whitefyr/" },
+      { name: "Discord", to: "/contact" },
     ]
 }
 
@@ -27,7 +34,7 @@ const navigation = {
 const Home = () => {   
     return (         
         <div className='Main'>
-            <StyledNavbar brand={navigation.brand} links={navigation.links}/>
+            <StyledNavbar nav={navigation.nav} social={navigation.social}/>
             <h1>Welcome to WhiteFyr's Website!</h1>
         </div>
     );
