@@ -11,11 +11,11 @@ const navigation = {
       { name: "Contact Me", to: "/contact" },
     ],
     social: [
-      { name: "YouTube", to: "/about" },
-      { name: "Twitch", to: "/builds" },
-      { name: "Twitter", to: "/downloads" },
-      { name: "Instagram", to: "https://www.instagram.com/whitefyr/" },
-      { name: "Discord", to: "/contact" },
+      { name: "YouTube", to: "https://bit.ly/FyrTube" },
+      { name: "Twitch", to: "https://bit.ly/FyrTwitch" },
+      { name: "Twitter", to: "https://bit.ly/FyrTweets" },
+      { name: "Instagram", to: "https://bit.ly/FyrInsta" },
+      { name: "Discord", to: "https://bit.ly/TheFyrCord" },
     ]
 }
 
