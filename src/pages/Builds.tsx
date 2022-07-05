@@ -1,8 +1,9 @@
 import React from 'react';
 import StyledNavbar from '../components/Navbar';
+import styled from 'styled-components';
 
 const navigation = {
-    brand: { name: "StyledNavbar", to: "/" },
+    brand: { name: "WhiteFyr", to: "/" },
     links: [
       { name: "About Me", to: "/about" },
       { name: "Builds", to: "/builds" },
@@ -11,10 +12,13 @@ const navigation = {
     ]
 }
 
+const customH1 = styled.h1`
+    texAlign: center;`;
+
 const Builds = () => {
     return (
         <div className="Builds">
-            <StyledNavbar brand={navigation.brand} links={navigation.links}/> 
+            <StyledNavbar brand={navigation.brand} links={navigation.links}/>
         </div>
     )
 };
