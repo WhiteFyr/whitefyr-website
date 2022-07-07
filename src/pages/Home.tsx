@@ -1,6 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import StyledNavbar from '../components/Navbar';
 import TwitchStream from '../components/TwitchStream';
+import YouTubeVideos from '../components/YouTubeVideos';
 
 const navigation = {
     nav: [
@@ -24,6 +25,7 @@ const Home = () => {
         <div className='Main'>
             <StyledNavbar nav={navigation.nav} social={navigation.social}/>
             <h1>Welcome to WhiteFyr's Website!</h1>
+            <YouTubeVideos></YouTubeVideos>
             <TwitchStream></TwitchStream>
         </div>
     );
