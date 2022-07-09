@@ -23,7 +23,10 @@ module.exports = {
             {
                 test: /\.(jpg|jpeg|gif|eot|otf|webp|mp4|webm|wav|mp3|m4a|aac|oga|ico|svg|woff|woff2|png|ttf)$/,
                 use: [{
-                    loader:'file-loader'
+                    loader:'file-loader',
+                    options: {
+                        name: 'images/[name].[ext]',
+                    }
                 }]
             }
         ]

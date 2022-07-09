@@ -1,6 +1,7 @@
 import React from 'react';
-import StyledNavbar from '../components/Navbar';
 import styled from 'styled-components';
+import StyledNavbar from '../components/Navbar';
+import Image from '../components/Image';
 
 const navigation = {
     nav: [
@@ -19,11 +20,20 @@ const navigation = {
     ]
 }
 
+const BuildsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 const Builds = () => {
     return (
         <div className="Builds">
             <StyledNavbar nav={navigation.nav} social={navigation.social}/>
-            <h1>TODO: Fill in my Builds!</h1>
+            <BuildsContainer>
+              <h1>These are my builds!</h1>
+              <Image imageUrl = '../images/afterlife_s5_house.png'></Image>
+            </BuildsContainer>
         </div>
     )
 };

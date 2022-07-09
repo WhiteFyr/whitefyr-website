@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from "styled-components";
 import StyledNavbar from '../components/Navbar';
 import TwitchStream from '../components/TwitchStream';
 import YouTubeVideos from '../components/YouTubeVideos';
@@ -20,13 +21,21 @@ const navigation = {
     ]
 }
 
+const HomeContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 const Home = () => {   
     return (
         <div className='Main'>
-            <StyledNavbar nav={navigation.nav} social={navigation.social}/>
-            <h1>Welcome to WhiteFyr's Website!</h1>
-            <YouTubeVideos></YouTubeVideos>
-            <TwitchStream></TwitchStream>
+          <StyledNavbar nav={navigation.nav} social={navigation.social}/>
+            <HomeContainer>
+              <h1>Welcome to WhiteFyr's Website!</h1>
+              <YouTubeVideos></YouTubeVideos>
+              <TwitchStream></TwitchStream>
+            </HomeContainer>
         </div>
     );
 }
