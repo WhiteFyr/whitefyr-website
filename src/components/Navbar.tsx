@@ -15,20 +15,14 @@ const Theme = {
 }
 
 const Navbar = styled.nav`
+  margin: 0px;
   background: ${Theme.colors.dark};
   font-family: ${Theme.fonts.heading};
   color: ${Theme.colors.light};
   display: flex;
-  margin: 0px;
   align-items: center;
   justify-content: space-between;
   a { color: white; text-decoration: none; }`;
-
-const Brand = styled.a`
-  font-weight: bold;
-  font-style: italic;
-  margin-left: 1rem;
-  padding-right: 1rem;`;
 
 const Ul = styled.ul`
   display: flex;
@@ -48,7 +42,7 @@ const Li = styled.li`
   text-decoration: none;
   display: flex;
   font-size: 14px;
-  height: 50px;
+  height: 30px;
   line-height: 16px;
   margin: 0 10px ;
   white-space: nowrap;`;

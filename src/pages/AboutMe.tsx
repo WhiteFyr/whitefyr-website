@@ -22,6 +22,7 @@ const AboutMe = () => {
     return (
         <div className="AboutMe">
             <StyledNavbar nav={navigation.nav} social={navigation.social}/> 
+            <h1>TODO: Fill in my About Me!</h1>
         </div>
     )
 };

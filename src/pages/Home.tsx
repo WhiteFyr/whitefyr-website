@@ -21,7 +21,7 @@ const navigation = {
 }
 
 const Home = () => {   
-    return (         
+    return (
         <div className='Main'>
             <StyledNavbar nav={navigation.nav} social={navigation.social}/>
             <h1>Welcome to WhiteFyr's Website!</h1>

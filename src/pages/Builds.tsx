@@ -23,6 +23,7 @@ const Builds = () => {
     return (
         <div className="Builds">
             <StyledNavbar nav={navigation.nav} social={navigation.social}/>
+            <h1>TODO: Fill in my Builds!</h1>
         </div>
     )
 };

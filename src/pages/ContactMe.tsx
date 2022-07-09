@@ -22,6 +22,7 @@ const ContactMe = () => {
     return (
         <div className="ContactMe">
             <StyledNavbar nav={navigation.nav} social={navigation.social}/> 
+            <h1>TODO: Fill in my Contact Me!</h1>
         </div>
     )
 };
