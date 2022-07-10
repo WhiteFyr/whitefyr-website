@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import StyledNavbar from '../components/Navbar';
 import Image from '../components/Image';
 
+const build1 = require('../images/afterlife_s5_house.png');
+
 const navigation = {
     nav: [
       { name: "Home", to: "/" },
@@ -32,7 +34,11 @@ const Builds = () => {
             <StyledNavbar nav={navigation.nav} social={navigation.social}/>
             <BuildsContainer>
               <h1>These are my builds!</h1>
-              <Image imageUrl = '../images/afterlife_s5_house.png'></Image>
+              <Image 
+                imageUrl='../images/afterlife_s5_house.png'
+                useFallback={true}
+                useFade={true}>
+              </Image>
             </BuildsContainer>
         </div>
     )
