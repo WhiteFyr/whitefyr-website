@@ -21,6 +21,8 @@ const navigation = {
     ]
 }
 
+// <div className="g-ytsubscribe" data-channel="2NYpls0vlrxwWQppm9vQ7w" data-layout="full" data-theme="dark" data-count="default"></div>
+
 const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
