@@ -7,6 +7,7 @@ const Theme = {
       dark: `#24292e`,
       light: `#EEEEEE`,
       red: `#ff5851`,
+      orange: `orange`,
     },
     fonts: {
       body: `IBM Plex Sans, sans-serif`,
@@ -16,13 +17,13 @@ const Theme = {
 
 const Navbar = styled.nav`
   margin: 0px;
-  background: ${Theme.colors.dark};
+  background: ${Theme.colors.orange};
   font-family: ${Theme.fonts.heading};
   color: ${Theme.colors.light};
   display: flex;
   align-items: center;
   justify-content: space-between;
-  a { color: white; text-decoration: none; }`;
+  a { color: black; text-decoration: none; }`;
 
 const Ul = styled.ul`
   display: flex;
@@ -42,8 +43,8 @@ const Li = styled.li`
   text-decoration: none;
   display: flex;
   font-size: 14px;
-  height: 30px;
-  line-height: 16px;
+  height: 20px;
+  line-height: 14px;
   margin: 0 10px ;
   white-space: nowrap;`;
 

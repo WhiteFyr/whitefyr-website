@@ -2,17 +2,23 @@ body {
     margin: 0px;
     padding: 0px;
     border: 0px;
-    background-color: blanchedalmond;
+    background-color: #24292e;
 }
 
 h1 {
     text-align: center;
+    color: whitesmoke;
 }
 
 h2 {
     margin: 10px;
+    color: whitesmoke;
 }
 
 center {
     text-align: center;
+}
+
+a {
+    color: white;
 }
